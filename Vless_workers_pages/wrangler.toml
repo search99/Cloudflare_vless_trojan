@@ -1,3 +1,2 @@
-name = "worker-name"
-type = "javascript"
+name = "vless-worker"
 main = "_worker.js"  # 指定您的入口文件
