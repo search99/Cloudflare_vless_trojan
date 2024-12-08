@@ -1,6 +1,7 @@
+# 新一条龙🐲教程即将更新！！！
 # Cloudflare-workers/pages代理脚本
 ### 本项目仅支持本地化部署
-### 本项目不使用订阅器、节点转换等第三方外链引用，无需担心节点订阅被外链作者查看
+### 本项目配置都为本地化编辑，不使用订阅器、订阅转换等第三方外链引用，无需担心节点订阅被外链作者查看
 --------------------------------
 ## 脚本特色：
 ### 懒人小白专用！默认节点都为CF官方IP，无需频繁更新订阅获取客户端优选IP
@@ -8,7 +9,7 @@
 #### Pages方式：支持vless+ws+tls、trojan+ws+tls代理节点
 #### CF Vless/Trojan的单节点支持path路径自定义三类proxyip（IPV4形式、IPV6形式、域名形式）
 #### 支持单节点链接、聚合通用节点订阅、sing-box节点订阅、clash节点订阅
-### 目前CF Vless/Trojan分为混淆版与未混淆版，两者无区别，都可使用
+### 目前CF Vless/Trojan仅提供乱码混淆版，修改参数需要使用变量
 -------------------------------------------------------------
 
 ### 交流平台：[甬哥博客地址](https://ygkkk.blogspot.com)、[甬哥YouTube频道](https://www.youtube.com/@ygkkk)、[甬哥TG电报群组](https://t.me/+jZHc6-A-1QQ5ZGVl)、[甬哥TG电报频道](https://t.me/+DkC9ZZUgEFQzMTZl)
@@ -44,7 +45,7 @@
 
 1、重点：首次pages部署好后，其域名可能要等1分钟才能生效打开
 
-2、重点：pages的变量更改好后，必须点击右上角创建部署选项，重新上传一次原始pages文件来使新变量生效
+2、重点：pages的变量更改好后，必须点击右上角创建部署选项，重新上传一次原始混淆pages文件来使新变量生效
 ![photo_2024-12-02_15-17-19](https://github.com/user-attachments/assets/31a659ef-8e2c-46be-b806-d16ae7ccc69f)
 
 3、ip1到ip7，pt1到pt7，在订阅分享链接中，仅支持80系端口关TLS节点
@@ -85,9 +86,11 @@
 
 ### 1、Serv00专用：
 
-修改自Serv00|ct8老王sing-box安装脚本，支持一键三协议：vless-reality、hysteria2、tuic。
+修改自Serv00|ct8老王sing-box安装脚本，支持一键三协议：vless-reality、vmess-ws(argo)、hysteria2。
 
 主要增加reality协议默认支持 CF vless/trojan 节点的proxyip以及非标端口的优选反代IP功能，脚本默认输出结果
+
+Serv00专用一键脚本：
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/Cloudflare_vless_trojan/main/serv00_proxyip.sh)
 ```
@@ -260,6 +263,6 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/cfip.sh -o cfip.sh && 
 ### 感谢你右上角的star🌟
 [![Stargazers over time](https://starchart.cc/yonggekkk/Cloudflare-workers-pages-vless.svg)](https://starchart.cc/yonggekkk/Cloudflare-workers-pages-vless)
 ------------------------------------------------------------------------
-### 代码来源：[ca110us](https://github.com/ca110us/epeius)、[emn178](https://github.com/emn178/js-sha256/blob/master/src/sha256.js)、[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[badafans](https://github.com/badafans/Cloudflare-IP-SpeedTest)、[XIU2](https://github.com/XIU2/CloudflareSpeedTest)
+### 代码来源：[ca110us](https://github.com/ca110us/epeius)、[emn178](https://github.com/emn178/js-sha256/blob/master/src/sha256.js)、[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[badafans](https://github.com/badafans/Cloudflare-IP-SpeedTest)、[XIU2](https://github.com/XIU2/CloudflareSpeedTest)、[老王eooce](https://github.com/eooce/Sing-box/blob/test/sb_00.sh)、[frankiejun](https://github.com/frankiejun/serv00-play/blob/main/start.sh)
 
 ### 声明：所有代码来源于Github社区，并通过ChatGPT进行整合
